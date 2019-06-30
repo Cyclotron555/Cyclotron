@@ -13,7 +13,7 @@ function setup()
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine);
-    ground = Bodies.rectangle(200, height, width, 100, options);
+    ground = Bodies.rectangle(200, height, outerWidth, 1000, options);
     World.add(world, ground);
 }
 function mousePressed()
