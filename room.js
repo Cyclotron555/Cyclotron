@@ -5,12 +5,16 @@ var Engine = Matter.Engine,
 var engine;
 var world;
 var boxes = [];
+var ground;
+var options = { isStatic: true }
 function setup()
 {
     createCanvas(outerWidth, outerHeight);
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine);
+    ground = Bodies.rectangle(200, height, width, 100, options);
+    World.add(world, ground);
 }
 function mousePressed()
 {
