@@ -18,7 +18,7 @@ function setup()
 }
 function mousePressed()
 {
-    boxes.push(new Box (mouseX, mouseY, 100, 100 ));
+    boxes.push(new Box (mouseX, mouseY, 32, 32 ));
 }
 function draw()
 {
